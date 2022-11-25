@@ -1,0 +1,364 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+* {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  -webkit-box-shadow: 0px 6px 8px 2px rgba(151, 149, 149, 0.75);
+          box-shadow: 0px 6px 8px 2px rgba(151, 149, 149, 0.75);
+}
+
+.header img {
+  height: 24px;
+}
+
+.header .nav__home {
+  position: relative;
+  left: -20%;
+  font-size: 18px;
+  color: black;
+}
+
+.menu__img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 240px;
+}
+
+#menuImg1 {
+  background-image: url("../../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+}
+
+#menuImg2 {
+  background-image: url("../../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+}
+
+#menuImg3 {
+  background-image: url("../../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+}
+
+#menuImg4 {
+  background-image: url("../../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+}
+
+.menu__main {
+  background-color: #f7f7f7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  top: -40px;
+  margin-bottom: -40px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+}
+
+.menu__main .menu__title {
+  width: 90%;
+  margin-bottom: 30px;
+  margin-top: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu__main .menu__title h1 {
+  font-family: 'Shrikhand', cursive;
+  font-size: 24px;
+}
+
+.menu__main .menu__title .fa-heart {
+  margin-right: 30px;
+  font-size: 20px;
+}
+
+.menu__main .cat__title {
+  font-weight: 300;
+  position: relative;
+}
+
+.menu__main .cat__title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  background-color: #9be1d0;
+  height: 2px;
+  width: 35px;
+}
+
+.menu__main .menu__entrees {
+  width: 90%;
+}
+
+.menu__main .menu__entrees .entrees__card__container {
+  margin-top: 20px;
+}
+
+.menu__main .menu__plats {
+  width: 90%;
+  margin-top: 20px;
+}
+
+.menu__main .menu__plats .plats__card__container {
+  margin-top: 20px;
+}
+
+.menu__main .menu__desserts {
+  width: 90%;
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+
+.menu__main .menu__desserts .desserts__card__container {
+  margin-top: 20px;
+}
+
+.card {
+  margin-bottom: 15px;
+  background-color: white;
+  border-radius: 15px;
+  -webkit-box-shadow: 3px 6px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 3px 6px 10px rgba(0, 0, 0, 0.2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.card .to__wrap__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 50%;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px;
+}
+
+.card .to__wrap__container .card__text {
+  min-width: 50%;
+}
+
+.card .to__wrap__container .card__text h3 {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+.card .to__wrap__container .card__text span {
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.card .to__wrap__container .card__text .to__wrap {
+  display: block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.card .to__wrap__container .price {
+  float: right;
+  font-size: 16px;
+  font-weight: 400;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  padding-bottom: 4px;
+}
+
+.menu__cta {
+  margin-bottom: 30px;
+}
+
+.menu__cta button {
+  background: #ff79da;
+  background: linear-gradient(169deg, #ff79da 0%, #9356dc 81%, #9356dc 100%);
+  padding: 15px 40px;
+  border-radius: 40px;
+  cursor: pointer;
+  border: none;
+  color: white;
+  -webkit-box-shadow: 7px 7px 9px 0px rgba(182, 182, 182, 0.75);
+          box-shadow: 7px 7px 9px 0px rgba(182, 182, 182, 0.75);
+}
+
+.footer {
+  background-color: #353535;
+  color: white;
+}
+
+.footer .footer__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer .footer__title h3 {
+  width: 90%;
+  margin: 15px 0;
+  font-family: 'Shrikhand', cursive;
+  font-weight: 300;
+}
+
+.footer .footer__list {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 0;
+  padding-bottom: 20px;
+}
+
+.footer .footer__list li {
+  width: 90%;
+  margin-bottom: 5px;
+}
+
+.footer .footer__list li .fa-solid {
+  margin-right: 10px;
+  font-size: 16px;
+  width: 20px;
+}
+
+.footer .footer__list li a {
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+}
+
+@media screen and (min-width: 768px) {
+  .menu__main {
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (50%)[2];
+        grid-template-columns: repeat(2, 50%);
+    grid-gap: 15px;
+    justify-items: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+  .menu__main .menu__title {
+    -ms-grid-row: 1;
+    grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/3;
+    width: 100%;
+  }
+  .menu__main .menu__title h1 {
+    margin-left: 20px;
+  }
+  .menu__main .menu__plats {
+    margin-top: 0;
+  }
+  .menu__main .menu__desserts {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .menu__main .menu__cta {
+    -ms-grid-row: 4;
+    grid-row: 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/3;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .menu__main .menu__cta button {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .menu__main {
+    -ms-grid-columns: (32%)[3];
+        grid-template-columns: repeat(3, 32%);
+  }
+  .menu__main .menu__title {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1/4;
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+  .menu__main .menu__cta {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    -ms-grid-row: 3;
+    grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1/4;
+  }
+  .footer .footer__title {
+    padding-left: 50px;
+  }
+  .footer .footer__title h3 {
+    width: 100%;
+  }
+  .footer .footer__list {
+    padding-left: 50px;
+  }
+  .footer .footer__list li {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=menu.css.map */

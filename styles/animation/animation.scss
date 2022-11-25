@@ -1,0 +1,180 @@
+$primary: #9356DC;
+$secondary: #FF79DA;
+$tertiary: #99E2D0;
+
+.anim {
+    background-color: $tertiary;
+    width: 0;
+    height: 50px;
+    opacity: 0;
+    padding: 10px;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .fa-solid {
+        font-size: 20px;
+        margin: 0px 10px;
+        color: $tertiary;
+        padding: 5px;
+        background-color: white;
+        border-radius: 50%;
+    }
+}
+.card:hover {
+    .anim {
+        transition: all 0.3s ease-in-out;
+        width: 70px;
+        opacity: 1;
+        .fa-solid {
+            animation: rotateCircle linear .3s;
+        }
+    }
+}
+.card:not(hover) {
+    .anim {
+        width: 0;
+        transition: all 0.3s ease-in-out;
+        opacity: 0;
+    }
+}
+
+.fa-heart:hover {
+    cursor: pointer;
+    animation-name: fillBg;
+    animation-duration: .4s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+@for $i from 1 through 4 {
+    .card-#{$i} {
+        animation-duration: .2s + $i/2;
+        animation-name: apparition;
+        animation-timing-function: ease-in;
+        animation-fill-mode: forwards;
+    }
+}
+
+
+@keyframes fillBg {
+
+    0% {
+        background: 20% linear-gradient(white 100%, $secondary);
+        background-position: 0% 80%;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: bold;
+    }
+
+    10% {
+        background: 20% linear-gradient(white 90%, $secondary);
+        background-position: 0% 40%;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: bold;
+    }
+
+    20% {
+        background: 20% linear-gradient(white 80%, $secondary);
+        background-position: 0% 40%;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: bold;
+    }
+
+    30% {
+        background: 20% linear-gradient(white 70%, $secondary);
+        background-position: 0% 40%;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: bold;
+    }
+
+    40% {
+        background: 20% linear-gradient(white 60%, $secondary);
+        background-position: 0% 40%;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: bold;
+    }
+
+    50% {
+        background: 20% linear-gradient(white 50%, $secondary);
+        background-position: 0% 40%;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: bold;
+    }
+
+    60% {
+        background: 20% linear-gradient(white 40%, $secondary);
+        background-position: 0% 40%;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: bold;
+    }
+
+    70% {
+        background: 20% linear-gradient(white 30%, $secondary);
+        background-position: 0% 40%;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: bold;
+    }
+
+    80% {
+        background: 20% linear-gradient(white 20%, $secondary);
+        background-position: 0% 40%;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: bold;
+    }
+
+    90% {
+        background: 20% linear-gradient(white 10%, $secondary);
+        background-position: 0% 40%;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: bold;
+    }
+
+    100% {
+        background: 20% linear-gradient($primary, $secondary);
+        background-position: 0% 0%;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: bold;
+    }
+}
+@keyframes apparition {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes rotateCircle {
+    0% {
+        transform: rotate(-180deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}

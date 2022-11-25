@@ -1,0 +1,355 @@
+.anim {
+  background-color: #99E2D0;
+  width: 0;
+  height: 50px;
+  opacity: 0;
+  padding: 10px;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.anim .fa-solid {
+  font-size: 20px;
+  margin: 0px 10px;
+  color: #99E2D0;
+  padding: 5px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.card:hover .anim {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  width: 70px;
+  opacity: 1;
+}
+
+.card:hover .anim .fa-solid {
+  -webkit-animation: rotateCircle linear .3s;
+          animation: rotateCircle linear .3s;
+}
+
+.card:not(hover) .anim {
+  width: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+}
+
+.fa-heart:hover {
+  cursor: pointer;
+  -webkit-animation-name: fillBg;
+          animation-name: fillBg;
+  -webkit-animation-duration: .4s;
+          animation-duration: .4s;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.card-1 {
+  -webkit-animation-duration: 0.7s;
+          animation-duration: 0.7s;
+  -webkit-animation-name: apparition;
+          animation-name: apparition;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.card-2 {
+  -webkit-animation-duration: 1.2s;
+          animation-duration: 1.2s;
+  -webkit-animation-name: apparition;
+          animation-name: apparition;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.card-3 {
+  -webkit-animation-duration: 1.7s;
+          animation-duration: 1.7s;
+  -webkit-animation-name: apparition;
+          animation-name: apparition;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.card-4 {
+  -webkit-animation-duration: 2.2s;
+          animation-duration: 2.2s;
+  -webkit-animation-name: apparition;
+          animation-name: apparition;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes fillBg {
+  0% {
+    background: 20% -webkit-gradient(linear, left top, left bottom, color-stop(100%, white), to(#FF79DA));
+    background: 20% linear-gradient(white 100%, #FF79DA);
+    background-position: 0% 80%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+  }
+  10% {
+    background: 20% -webkit-gradient(linear, left top, left bottom, color-stop(90%, white), to(#FF79DA));
+    background: 20% linear-gradient(white 90%, #FF79DA);
+    background-position: 0% 40%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+  }
+  20% {
+    background: 20% -webkit-gradient(linear, left top, left bottom, color-stop(80%, white), to(#FF79DA));
+    background: 20% linear-gradient(white 80%, #FF79DA);
+    background-position: 0% 40%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+  }
+  30% {
+    background: 20% -webkit-gradient(linear, left top, left bottom, color-stop(70%, white), to(#FF79DA));
+    background: 20% linear-gradient(white 70%, #FF79DA);
+    background-position: 0% 40%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+  }
+  40% {
+    background: 20% -webkit-gradient(linear, left top, left bottom, color-stop(60%, white), to(#FF79DA));
+    background: 20% linear-gradient(white 60%, #FF79DA);
+    background-position: 0% 40%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+  }
+  50% {
+    background: 20% -webkit-gradient(linear, left top, left bottom, color-stop(50%, white), to(#FF79DA));
+    background: 20% linear-gradient(white 50%, #FF79DA);
+    background-position: 0% 40%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+  }
+  60% {
+    background: 20% -webkit-gradient(linear, left top, left bottom, color-stop(40%, white), to(#FF79DA));
+    background: 20% linear-gradient(white 40%, #FF79DA);
+    background-position: 0% 40%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+  }
+  70% {
+    background: 20% -webkit-gradient(linear, left top, left bottom, color-stop(30%, white), to(#FF79DA));
+    background: 20% linear-gradient(white 30%, #FF79DA);
+    background-position: 0% 40%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+  }
+  80% {
+    background: 20% -webkit-gradient(linear, left top, left bottom, color-stop(20%, white), to(#FF79DA));
+    background: 20% linear-gradient(white 20%, #FF79DA);
+    background-position: 0% 40%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+  }
+  90% {
+    background: 20% -webkit-gradient(linear, left top, left bottom, color-stop(10%, white), to(#FF79DA));
+    background: 20% linear-gradient(white 10%, #FF79DA);
+    background-position: 0% 40%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+  }
+  100% {
+    background: 20% -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+    background: 20% linear-gradient(#9356DC, #FF79DA);
+    background-position: 0% 0%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+  }
+}
+
+@keyframes fillBg {
+  0% {
+    background: 20% -webkit-gradient(linear, left top, left bottom, color-stop(100%, white), to(#FF79DA));
+    background: 20% linear-gradient(white 100%, #FF79DA);
+    background-position: 0% 80%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+  }
+  10% {
+    background: 20% -webkit-gradient(linear, left top, left bottom, color-stop(90%, white), to(#FF79DA));
+    background: 20% linear-gradient(white 90%, #FF79DA);
+    background-position: 0% 40%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+  }
+  20% {
+    background: 20% -webkit-gradient(linear, left top, left bottom, color-stop(80%, white), to(#FF79DA));
+    background: 20% linear-gradient(white 80%, #FF79DA);
+    background-position: 0% 40%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+  }
+  30% {
+    background: 20% -webkit-gradient(linear, left top, left bottom, color-stop(70%, white), to(#FF79DA));
+    background: 20% linear-gradient(white 70%, #FF79DA);
+    background-position: 0% 40%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+  }
+  40% {
+    background: 20% -webkit-gradient(linear, left top, left bottom, color-stop(60%, white), to(#FF79DA));
+    background: 20% linear-gradient(white 60%, #FF79DA);
+    background-position: 0% 40%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+  }
+  50% {
+    background: 20% -webkit-gradient(linear, left top, left bottom, color-stop(50%, white), to(#FF79DA));
+    background: 20% linear-gradient(white 50%, #FF79DA);
+    background-position: 0% 40%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+  }
+  60% {
+    background: 20% -webkit-gradient(linear, left top, left bottom, color-stop(40%, white), to(#FF79DA));
+    background: 20% linear-gradient(white 40%, #FF79DA);
+    background-position: 0% 40%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+  }
+  70% {
+    background: 20% -webkit-gradient(linear, left top, left bottom, color-stop(30%, white), to(#FF79DA));
+    background: 20% linear-gradient(white 30%, #FF79DA);
+    background-position: 0% 40%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+  }
+  80% {
+    background: 20% -webkit-gradient(linear, left top, left bottom, color-stop(20%, white), to(#FF79DA));
+    background: 20% linear-gradient(white 20%, #FF79DA);
+    background-position: 0% 40%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+  }
+  90% {
+    background: 20% -webkit-gradient(linear, left top, left bottom, color-stop(10%, white), to(#FF79DA));
+    background: 20% linear-gradient(white 10%, #FF79DA);
+    background-position: 0% 40%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+  }
+  100% {
+    background: 20% -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+    background: 20% linear-gradient(#9356DC, #FF79DA);
+    background-position: 0% 0%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+  }
+}
+
+@-webkit-keyframes apparition {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes apparition {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@-webkit-keyframes rotateCircle {
+  0% {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes rotateCircle {
+  0% {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+/*# sourceMappingURL=animation.css.map */
