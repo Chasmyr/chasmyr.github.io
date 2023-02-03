@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <meta charset="utf-8">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=DM+Sans&display=swap" rel="stylesheet">
+    <title>Fisheye - photographe </title>
+  </head>
+  <body>
+    <div id="contact_modal" role="dialog" aria-describedby="contactModal" aria-modal="true" aria-hidden="true">
+			<div class="modal" id="contactModal">
+				<header class="modal-header">
+          <div class="modal-title">
+
+          </div>
+          <a href="#" class="btn-close-modal" onclick="closeModal()" aria-label="Close Contact Form">
+            <img src="assets/icons/close.svg" alt="close button"/>
+          </a>
+        </header>
+				<form id="contact_form" aria-label="formulaire de contact">
+					<div>
+						<label>Prénom</label>
+						<input id="form_name" aria-label="First Name"/>
+					</div>
+          <div>
+						<label>Nom</label>
+						<input id="form_lastName" aria-label="Last Name"/>
+					</div>
+          <div>
+						<label>Email</label>
+						<input id="form_email" aria-label="Email" />
+					</div>
+          <div>
+						<label>Message</label>
+						<input class="modal-input-textarea" id="form_message" aria-label="Your Message" />
+					</div>
+          <button class="contact_button" type="submit" aria-label="Send">Envoyer</button>
+				</form>
+			</div>
+		</div>
+    <div id="lightbox_bg" role="dialog">
+      <div class="lightbox" aria-label="image closeup view">
+          <a href="#" class="btn-close-lightbox" aria-label="Close dialog" role="button">
+            <img src="assets/icons/closeSlider.svg" alt="close button"/>
+          </a>
+          <div class="lightbox-slide">
+            <a href="#" class="slider-prev-option" aria-label="Previous image">
+              <img src="assets/icons/prev.svg" alt="previous slide button"/>
+            </a>
+            <a href="#" class="slider-next-option" aria-label="Next image">
+              <img src="assets/icons/next.svg" alt="next slide button"/>
+            </a>
+          </div>
+          <div class="lightbox-info">
+              <p class="info-title"></p>
+          </div>
+      </div>
+    </div>
+    <header>
+      <a href="/" aria-label="link to home page" class="header-link">
+        <img src="assets/images/logo.png" class="logo" alt="Fisheye Home page" role="link"/>
+      </a>
+    </header>
+    <main id="main" class="main-photographer">
+      <section class="photograph-header">
+        <div class="centered">
+          <button class="contact_button" onclick="displayModal()" aria-label="Contact Me">Contactez-moi</button>
+        </div>
+      </section>
+      <section class="option">
+        <label class="select-label">Trier par</label>
+        <ul class="filter-menu">
+          <li>
+            <button type="button" role="button" aria-haspopup="listbox" id="dropdown-filter">Filtre<span class="arrow"></span></button>
+            <ul class="dropdown">
+              <li><a href="#" class="like-option">Popularité</a></li>
+              <li"><a href="#" class="date-option">Date</a></li>
+              <li><a href="#" class="title-option">Titre</a></li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+      <section class="media-collection"> 
+
+      </section>
+      <aside class="info-collection">
+      </aside>
+    </main>
+    <script src="./scripts/factories/detailsPhotographer.js"></script>
+    <script src="./scripts/factories/media.js"></script>
+    <script src="/scripts/pages/photographer.js"></script>
+    <script src="./scripts/utils/sort.js"></script>
+    <script src="/scripts/utils/contactForm.js"></script>
+    <script src="./scripts/utils/lightbox.js"></script>
+  </body>
+</html>

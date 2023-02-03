@@ -1,0 +1,60 @@
+ul {
+    background-color: #901C1C;
+    border-radius: 5px;
+    padding-left: 0;
+}
+ul li {
+    list-style: none;
+    font-size: 18px;
+}
+ul li button {
+    font-size: inherit;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: white;
+    width: 170px;
+}
+ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+ul li a, ul li button {
+    padding: 16px;
+    text-align: left;
+}
+.filter-menu {
+    position: absolute;
+    top: 360px;
+    margin-left: 90px;
+    transition: transform ease .2s;
+}
+.dropdown {
+    padding: 0px;
+    z-index: 3;
+    height: 0;
+    display: none;
+    overflow: hidden;
+    transition: height ease .2s;
+}
+li:focus-within .dropdown {
+    height: auto;
+    display: block;
+}
+.arrow {
+    width: 6px;
+    height: 6px;
+    display: inline-block;
+    vertical-align: middle;
+    border-left: 3px solid white;
+    border-bottom: 3px solid white;
+    transform: rotate(-45deg);
+    float: right;
+    margin-top: 3px;
+    transition: transform ease .2s;
+}
+li:focus-within > button > .arrow {
+    transform: rotate(-225deg);
+    margin-top: 7px;
+}
