@@ -1,5 +1,5 @@
 // récupéerer les éléments a rendre non cliquable
-const headerFocus = document.querySelector('header')
+const headerFocus = document.querySelector('.header-page')
 const mainFocus = document.querySelector('.main-photographer')
 const btnClose = document.querySelector('.btn-close-modal')
 
@@ -8,7 +8,9 @@ function displayModal() {
 	modal.style.display = "block";
     modal.setAttribute("aria-hidden", 'false')
     mainFocus.setAttribute("aria-hidden", 'true')
+    mainFocus.style.visibility = "hidden"
     headerFocus.setAttribute("aria-hidden", 'true')
+    headerFocus.style.visibility = "hidden"
     btnClose.focus()
 }
 
@@ -17,7 +19,9 @@ function closeModal() {
     modal.style.display = "none";
     modal.setAttribute("aria-hidden", 'true')
     mainFocus.setAttribute("aria-hidden", 'false')
+    mainFocus.style.visibility = "visible"
     headerFocus.setAttribute("aria-hidden", 'false')
+    headerFocus.style.visibility = "visible"
 }
 
 //gérer le sbumit

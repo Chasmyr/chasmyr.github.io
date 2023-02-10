@@ -45,6 +45,10 @@ function openLightBox(media){
     //ajouter le titre du media
     lightboxInfo.textContent = `${media.title}`
 
+    // cacher le contenu derriere pour qu'il ne soit pas selectionable
+    headerFocus.style.visibility = "hidden"
+    mainFocus.style.visibility = "hidden"
+
     //ajouter le focus
     document.querySelector('.btn-close-lightbox').focus()
 }
@@ -53,6 +57,10 @@ function closeLightbox(){
     lightboxContainer.style.display = "none"
     const imageToRemove = document.querySelector('.slide-image')
     imageToRemove.remove()
+
+    //remettre la visibilité au contenu
+    headerFocus.style.visibility = "visible"
+    mainFocus.style.visibility = "visible"
 }
 
 function nextSlide(){
