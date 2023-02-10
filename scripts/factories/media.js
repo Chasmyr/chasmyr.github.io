@@ -23,6 +23,7 @@ function mediaFactory(media) {
 
         const likeAction = document.createElement("a")
         likeAction.href="#"
+        likeAction.ariaLabel = "Like button"
 
         events.forEach(ev => {
             likeAction.addEventListener(ev, (e) => {
